@@ -1,0 +1,50 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+p.dummy{
+    background-image: url("./../images/paragraph.png");
+    height:200px;
+}
+
+.faq > .ui.styled.accordion>.title{
+    font-size:2.5em;
+}
+
+.faq > .ui.styled.accordion>.content{
+    font-size:1.5em;
+}
+
+.howtoget .ui.list > .item > .content > .header.label{
+    font-size:2.5em;
+    line-height:1.5;
+    margin-left:20px;
+}
+
+.howtoget .ui.list > .item > .content > .description{
+    margin-top:30px;
+    margin-bottom:30px;
+    font-size:1.5em;
+    margin-left:-50px;
+    line-height:1.5
+}
+
+.ui.segment.separator-wrap{
+    position:relative;
+    width:100%;
+    background-color:#f3f3f3;
+    height:150px;
+}
+
+.ui.segment.separator-wrap > .separator-content{
+    position:absolute;
+    width:50%;
+    margin-left:25%;
+    height:150px;
+    background-color: #009cde;
+    top:70px;
+    font-size:4em;
+    padding-top: 60px;
+    text-align: center;
+    color:white
+}

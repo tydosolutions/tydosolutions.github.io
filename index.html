@@ -81,11 +81,9 @@
         </div>
 
         <div class="ui basic segment  content__body__container">
-            <div class="ui pointed blue flow four item pointing secondary  massive labeled icon menu">
+            <div class="ui pointed blue flow two item pointing secondary  massive labeled icon menu">
                 <a class="active item"><i class="graduation cap icon "></i>Internship</a>
-                <a class="item"><i class="users icon "></i>HR Solutions</a>
                 <a class=" item"><i class="users icon "></i>Training</a>
-                <a class=" item"><i class="chart line icon "></i>Jobs</a>
             </div>
             <div class="ui basic segment">
                 <div class="ui two column grid">
@@ -101,7 +99,6 @@
                             <img>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -113,133 +110,322 @@
             </div>
         </div>
 
-        <div class="ui howtoget container content__body__container">
-            <div class="ui list">
-                <div class="item">
-                    <i class="icon"><a class="ui red circular huge label">1</a></i>
-                    <div class="content">
-                        <a class="header label">Student Profiling</a>
-                        <div class="description">
-                            <div class="ui mini ordered  fluid steps">
-                                <div class="completed step">
-                                    <div class="content">
-                                        <div class="title">Resume Creation</div>
+        <div class="ui segment basic content__body__container">
+            <div class="ui pointed blue flow two item pointing secondary  massive labeled icon menu">
+                <a id="international-intern-tab" class="active item" onClick="showHide(this);"><i class="graduation cap icon "></i>International-Internship</a>
+                <a id="domestic-intern-tab" class=" item" onClick="showHide(this);"><i class="users icon "></i>Domestic-Internship</a>
+            </div>
+            <div class="ui basic segment" id="international-intern-container">
+                <div class="ui stackable three column grid">
+                    <div class="column">
+                        <div class="ui card" style="margin:auto">
+                            <div class="content">
+                                <div class="ui header large block blue" >Student Profiling</div>
+                            </div>
+                            <div class="content">
+                                <a class="ui red ribbon label">Step 1</a>
+                                <div class="ui mini vertical fluid steps">
+                                    <div class="completed step">
+                                        <i class="truck icon"></i>
+                                        <div class="content">
+                                            <div class="title">Resume Creation</div>
+                                        </div>
+                                    </div>
+                                    <div class="completed step">
+                                        <i class="truck icon"></i>
+                                        <div class="content">
+                                            <div class="title">Basic Orientation</div>
+                                        </div>
+                                    </div>
+                                    <div class="completed step">
+                                        <i class="truck icon"></i>
+                                        <div class="content">
+                                            <div class="title">Country Counseling</div>
+                                        </div>
+                                    </div>
+                                    <div class="completed step">
+                                        <i class="truck icon"></i>
+                                        <div class="content">
+                                            <div class="title">Internship Alignment</div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="completed step">
-                                    <div class="content">
-                                        <div class="title">Basic Orientation</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="column">
+                        <div class="ui card" style="margin:auto">
+                            <div class="content">
+                                <div class="ui header large block blue">Visa Document Rediness</div>
+                            </div>
+                            <div class="content">
+                                <a class="ui red ribbon label">Step 2</a>
+                                <div class="ui mini vertical fluid steps">
+                                    <div class="completed step">
+                                        <i class="truck icon"></i>
+                                        <div class="content">
+                                            <div class="title">Passport Check</div>
+                                        </div>
+                                    </div>
+                                    <div class="completed step">
+                                        <i class="truck icon"></i>
+                                        <div class="content">
+                                            <div class="title">Educational Document Check</div>
+                                        </div>
+                                    </div>
+                                    <div class="completed step">
+                                        <i class="truck icon"></i>
+                                        <div class="content">
+                                            <div class="title">Internship Confirmation</div>
+                                        </div>
+                                    </div>
+                                    <div class="completed step">
+                                        <i class="truck icon"></i>
+                                        <div class="content">
+                                            <div class="title">Medical Certificates</div>
+                                        </div>
+                                    </div>
+                                    <div class="completed step">
+                                        <i class="truck icon"></i>
+                                        <div class="content">
+                                            <div class="title">Funds Availability Check</div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="completed step">
-                                    <div class="content">
-                                        <div class="title">Country Counseling</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="ui card" style="margin:auto">
+                            <div class="content">
+                                <div class="ui header large block blue">Visa Processing</div>
+                            </div>
+                            <div class="content">
+                                <a class="ui red ribbon label">Step 3</a>
+                                <div class="ui mini vertical fluid  steps">
+                                    <div class="completed step">
+                                         <i class="truck icon"></i>
+                                        <div class="content">
+                                            <div class="title">Visa Application</div>
+                                        </div>
+                                    </div>
+                                    <div class="completed step">
+                                         <i class="truck icon"></i>
+                                        <div class="content">
+                                            <div class="title">Student coordination</div>
+                                        </div>
+                                    </div>
+                                    <div class="completed step">
+                                         <i class="truck icon"></i>
+                                        <div class="content">
+                                            <div class="title">Internship Confirmation</div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="completed step">
-                                    <div class="content">
-                                        <div class="title">Internship Alignment</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="ui card" style="margin:auto">
+                            <div class="content">
+                                <div class="ui header large block blue">Travel and Logistics</div>
+                            </div>
+                            <div class="content">
+                                <a class="ui red ribbon label">Step 4</a>
+                                <div class="ui mini vertical fluid steps">
+                                    <div class="completed step">
+                                         <i class="truck icon"></i>
+                                        <div class="content">
+                                            <div class="title">Travel Ticket Booking</div>
+                                        </div>
+                                    </div>
+                                    <div class="completed step">
+                                         <i class="truck icon"></i>
+                                        <div class="content">
+                                            <div class="title">Medical and <br> Insurance Coverage</div>
+                                        </div>
+                                    </div>
+                                    <div class="completed step">
+                                         <i class="truck icon"></i>
+                                        <div class="content">
+                                            <div class="title">Final Travel Orientation</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="ui card" style="margin:auto">
+                            <div class="content">
+                                <div class="ui header large block blue">Internship Starts</div>
+                            </div>
+                            <div class="content">
+                                <a class="ui red ribbon label">Step 5</a>
+                               <div class="ui mini vertical fluid steps">
+                                    <div class="completed step">
+                                         <i class="truck icon"></i>
+                                        <div class="content">
+                                            <div class="title">Students report <br> out at Destination</div>
+                                        </div>
+                                    </div>
+                                    <div class="completed step">
+                                         <i class="truck icon"></i>
+                                        <div class="content">
+                                            <div class="title">Internship start Confirmation</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="item">
-                    <i class="icon"><a class="ui red circular huge label">2</a></i>
-                    <div class="content">
-                        <a class="header label">Visa Document Rediness</a>
-                        <div class="description">
-                            <div class="ui mini ordered fluid steps">
-                                <div class="completed step">
-                                    <div class="content">
-                                        <div class="title">Passport / Educational Document Check</div>
+            </div>
+
+
+            <div class="ui basic segment" id="domestic-intern-container">
+                <div class="ui stackable four column grid">
+                    <div class="column">
+                        <div class="ui card">
+                            <div class="content">
+                                <div class="ui header large block blue">Student Profiling</div>
+                            </div>
+                            <div class="content">
+                                <a class="ui red ribbon label">Step 1</a>
+                                <div class="ui mini vertical fluid steps">
+                                    <div class="completed step">
+                                        <i class="truck icon"></i>
+                                        <div class="content">
+                                            <div class="title">Resume Creation</div>
+                                        </div>
+                                    </div>
+                                    <div class="completed step">
+                                        <i class="truck icon"></i>
+                                        <div class="content">
+                                            <div class="title">Basic Orientation</div>
+                                        </div>
+                                    </div>
+                                    <div class="completed step">
+                                        <i class="truck icon"></i>
+                                        <div class="content">
+                                            <div class="title">Country Counseling</div>
+                                        </div>
+                                    </div>
+                                    <div class="completed step">
+                                        <i class="truck icon"></i>
+                                        <div class="content">
+                                            <div class="title">Internship Alignment</div>
+                                        </div>
                                     </div>
                                 </div>
-                               
-                                <div class="completed step">
-                                    <div class="content">
-                                        <div class="title">Internship Confirmation Letter</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="column">
+                        <div class="ui card">
+                            <div class="content">
+                                <div class="ui header large block blue">Student Profiling</div>
+                            </div>
+                            <div class="content">
+                                <a class="ui red ribbon label">Step 1</a>
+                                <div class="ui mini vertical fluid steps">
+                                    <div class="completed step">
+                                        <i class="truck icon"></i>
+                                        <div class="content">
+                                            <div class="title">Resume Creation</div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="completed step">
-                                    <div class="content">
-                                        <div class="title">Medical Certificates</div>
+                                    <div class="completed step">
+                                        <i class="truck icon"></i>
+                                        <div class="content">
+                                            <div class="title">Basic Orientation</div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="completed step">
-                                    <div class="content">
-                                        <div class="title">Funds Availability Check</div>
+                                    <div class="completed step">
+                                        <i class="truck icon"></i>
+                                        <div class="content">
+                                            <div class="title">Country Counseling</div>
+                                        </div>
+                                    </div>
+                                    <div class="completed step">
+                                        <i class="truck icon"></i>
+                                        <div class="content">
+                                            <div class="title">Internship Alignment</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="item">
-                    <i class="icon"><a class="ui red circular huge label">3</a></i>
-                    <div class="content">
-                        <a class="header label">Visa Processing</a>
-                        <div class="description">
-                            <div class="ui mini ordered fluid steps">
-                                <div class="completed step">
-                                    <div class="content">
-                                        <div class="title">Visa Application</div>
+                    <div class="column">
+                        <div class="ui card">
+                            <div class="content">
+                                <div class="ui header large block blue">Student Profiling</div>
+                            </div>
+                            <div class="content">
+                                <a class="ui red ribbon label">Step 1</a>
+                                <div class="ui mini vertical fluid steps">
+                                    <div class="completed step">
+                                        <i class="truck icon"></i>
+                                        <div class="content">
+                                            <div class="title">Resume Creation</div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="completed step">
-                                    <div class="content">
-                                        <div class="title">Student coordination</div>
+                                    <div class="completed step">
+                                        <i class="truck icon"></i>
+                                        <div class="content">
+                                            <div class="title">Basic Orientation</div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="completed step">
-                                    <div class="content">
-                                        <div class="title">Internship Confirmation</div>
+                                    <div class="completed step">
+                                        <i class="truck icon"></i>
+                                        <div class="content">
+                                            <div class="title">Country Counseling</div>
+                                        </div>
+                                    </div>
+                                    <div class="completed step">
+                                        <i class="truck icon"></i>
+                                        <div class="content">
+                                            <div class="title">Internship Alignment</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="item">
-                    <i class="icon"><a class="ui red circular huge label">4</a></i>
-                    <div class="content">
-                        <a class="header label">Travel and Logistics</a>
-                        <div class="description">
-                            <div class="ui mini ordered fluid steps">
-                                <div class="completed step">
-                                    <div class="content">
-                                        <div class="title">Travel Ticket Booking</div>
-                                    </div>
-                                </div>
-                                <div class="completed step">
-                                    <div class="content">
-                                        <div class="title">Medical and Insurance Coverage</div>
-                                    </div>
-                                </div>
-                                <div class="completed step">
-                                    <div class="content">
-                                        <div class="title">Final Travel Orientation</div>
-                                    </div>
-                                </div>
+                    <div class="column">
+                        <div class="ui card">
+                            <div class="content">
+                                <div class="ui header large block blue">Student Profiling</div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <i class="icon"><a class="ui red circular huge label">5</a></i>
-                    <div class="content">
-                        <a class="header label">Internship Starts</a>
-                        <div class="description">
-                            <div class="ui mini ordered fluid steps">
-                                <div class="completed step">
-                                    <div class="content">
-                                        <div class="title">Students report out at Destination</div>
+                            <div class="content">
+                                <a class="ui red ribbon label">Step 1</a>
+                                <div class="ui mini vertical fluid steps">
+                                    <div class="completed step">
+                                        <i class="truck icon"></i>
+                                        <div class="content">
+                                            <div class="title">Resume Creation</div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="completed step">
-                                    <div class="content">
-                                        <div class="title">Internship start Confirmation</div>
+                                    <div class="completed step">
+                                        <i class="truck icon"></i>
+                                        <div class="content">
+                                            <div class="title">Basic Orientation</div>
+                                        </div>
+                                    </div>
+                                    <div class="completed step">
+                                        <i class="truck icon"></i>
+                                        <div class="content">
+                                            <div class="title">Country Counseling</div>
+                                        </div>
+                                    </div>
+                                    <div class="completed step">
+                                        <i class="truck icon"></i>
+                                        <div class="content">
+                                            <div class="title">Internship Alignment</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -261,7 +447,7 @@
                     <i class="dropdown icon"></i> Will I get paid?
                 </div>
                 <div class="content">
-                    <p class="transition hidden">Many of our internships are paid.  The unpaid ones indicate that they are for course credit in the description.</p>
+                    <p class="transition hidden">Many of our internships are paid. The unpaid ones indicate that they are for course credit in the description.</p>
                 </div>
                 <div class="title">
                     <i class="dropdown icon"></i> Will I get free live event tickets?
@@ -279,25 +465,32 @@
                     <i class="dropdown icon"></i> What is a summary of the application/interview process?
                 </div>
                 <div class="content">
-                    <p>If your resume is selected, you will have a phone interview with the recruiter.  Some of those interviewed will proceed to final round in-person interviews (or video interviews, if in-persons are a hardship).  Occasionally there are additional steps in the process, such as coding assignments or additional phone interviews.</p>
+                    <p>If your resume is selected, you will have a phone interview with the recruiter. Some of those interviewed
+                        will proceed to final round in-person interviews (or video interviews, if in-persons are a hardship).
+                        Occasionally there are additional steps in the process, such as coding assignments or additional
+                        phone interviews.</p>
                 </div>
                 <div class="title">
                     <i class="dropdown icon"></i> When will I hear back?
                 </div>
                 <div class="content">
-                    <p>It depends. It may be some time before you hear back after a resume submission that a hiring team is interested in moving forward.  But once you start interviewing, we try our best to move you through the process in a timely manner.</p>
+                    <p>It depends. It may be some time before you hear back after a resume submission that a hiring team is
+                        interested in moving forward. But once you start interviewing, we try our best to move you through
+                        the process in a timely manner.</p>
                 </div>
                 <div class="title">
                     <i class="dropdown icon"></i> How should I follow up, if that&rsquo;s okay?
                 </div>
                 <div class="content">
-                    <p>Once you are selected and in the interview process, you can certainly check-in with your recruiter for status updates.</p>
+                    <p>Once you are selected and in the interview process, you can certainly check-in with your recruiter for
+                        status updates.</p>
                 </div>
                 <div class="title">
                     <i class="dropdown icon"></i> Should I apply for multiple internships posted?
                 </div>
                 <div class="content">
-                    <p>If you feel you are qualified and interested in multiple internships, sure!  Please know often one internship posting corresponds to several internship openings on different teams looking for similar skill sets.</p>
+                    <p>If you feel you are qualified and interested in multiple internships, sure! Please know often one internship
+                        posting corresponds to several internship openings on different teams looking for similar skill sets.</p>
                 </div>
             </div>
         </div>
@@ -317,6 +510,21 @@
 <script src="./js/semantic.min.js"></script>
 <script src="./js/jquery.waypoints.min.js"></script>
 <script>
+     function showHide(object){
+            if($(object).attr("id")==="international-intern-tab"){
+                $("#domestic-intern-tab").removeClass('active');
+                $(object).addClass('active');
+                $("#domestic-intern-container").hide();
+                 $("#international-intern-container").show();
+
+            }else if($(object).attr("id")==="domestic-intern-tab"){
+                $("#international-intern-tab").removeClass('active');
+                $(object).addClass('active');
+                 $("#domestic-intern-container").show();
+                 $("#international-intern-container").hide();
+            }
+        }
+
     $(document).ready(function () {
         $('.ui.accordion')
             .accordion()
@@ -325,17 +533,13 @@
         $('.overlay')
             .visibility({
                 type: 'fixed',
-                offset: 0 // give some space from top of screen
+                offset: 0 
             })
             ;
-        /* var waypoint = new Waypoint({
-             element: document.getElementById('context'),
-             handler: function (direction) {
-                 console.log('Scrolled to waypoint!')
-                 $("#top").removeClass("inverted");
-                 $("#mainheader").addClass("inverted");
-             }
-         })*/
+
+  $("#domestic-intern-container").hide();
+       
+      
     });
 
 </script>

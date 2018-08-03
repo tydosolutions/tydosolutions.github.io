@@ -84,9 +84,22 @@ body {
     /*Media Query*/
 }
 
+@media only screen and (max-width: 767px) {
+    .ui.header.masthead__content__line2--fontsize {
+        font-size: 1em;
+    }
+}
+
 .ui.primary.button.masthead__content__calltoaction {
     margin-top: 20px;
     /*Media Query*/
+}
+
+@media only screen and (max-width: 767px) {
+    .ui.primary.button.masthead__content__calltoaction {
+        margin-top: 10px;
+        /*Media Query*/
+    }
 }
 
 .content__container {
@@ -146,6 +159,7 @@ body {
 .faq>.ui.styled.accordion>.content {
     font-size: 1.2em;
 }
+
 /*
 .howtoget .ui.list>.item>.content>.header.label {
     font-size: 1.5em;

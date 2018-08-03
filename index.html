@@ -120,7 +120,7 @@
                     <div class="column">
                         <div class="ui card" style="margin:auto">
                             <div class="content">
-                                <div class="ui header large block blue" >Student Profiling</div>
+                                <div class="ui header large block blue">Student Profiling</div>
                             </div>
                             <div class="content">
                                 <a class="ui red ribbon label">Step 1</a>
@@ -205,19 +205,19 @@
                                 <a class="ui red ribbon label">Step 3</a>
                                 <div class="ui mini vertical fluid  steps">
                                     <div class="completed step">
-                                         <i class="truck icon"></i>
+                                        <i class="truck icon"></i>
                                         <div class="content">
                                             <div class="title">Visa Application</div>
                                         </div>
                                     </div>
                                     <div class="completed step">
-                                         <i class="truck icon"></i>
+                                        <i class="truck icon"></i>
                                         <div class="content">
                                             <div class="title">Student coordination</div>
                                         </div>
                                     </div>
                                     <div class="completed step">
-                                         <i class="truck icon"></i>
+                                        <i class="truck icon"></i>
                                         <div class="content">
                                             <div class="title">Internship Confirmation</div>
                                         </div>
@@ -235,19 +235,19 @@
                                 <a class="ui red ribbon label">Step 4</a>
                                 <div class="ui mini vertical fluid steps">
                                     <div class="completed step">
-                                         <i class="truck icon"></i>
+                                        <i class="truck icon"></i>
                                         <div class="content">
                                             <div class="title">Travel Ticket Booking</div>
                                         </div>
                                     </div>
                                     <div class="completed step">
-                                         <i class="truck icon"></i>
+                                        <i class="truck icon"></i>
                                         <div class="content">
                                             <div class="title">Medical and <br> Insurance Coverage</div>
                                         </div>
                                     </div>
                                     <div class="completed step">
-                                         <i class="truck icon"></i>
+                                        <i class="truck icon"></i>
                                         <div class="content">
                                             <div class="title">Final Travel Orientation</div>
                                         </div>
@@ -263,15 +263,15 @@
                             </div>
                             <div class="content">
                                 <a class="ui red ribbon label">Step 5</a>
-                               <div class="ui mini vertical fluid steps">
+                                <div class="ui mini vertical fluid steps">
                                     <div class="completed step">
-                                         <i class="truck icon"></i>
+                                        <i class="truck icon"></i>
                                         <div class="content">
                                             <div class="title">Students report <br> out at Destination</div>
                                         </div>
                                     </div>
                                     <div class="completed step">
-                                         <i class="truck icon"></i>
+                                        <i class="truck icon"></i>
                                         <div class="content">
                                             <div class="title">Internship start Confirmation</div>
                                         </div>
@@ -510,37 +510,60 @@
 <script src="./js/semantic.min.js"></script>
 <script src="./js/jquery.waypoints.min.js"></script>
 <script>
-     function showHide(object){
-            if($(object).attr("id")==="international-intern-tab"){
-                $("#domestic-intern-tab").removeClass('active');
-                $(object).addClass('active');
-                $("#domestic-intern-container").hide();
-                 $("#international-intern-container").show();
+                                                                   var mq = function (query, callback, usePolyfill) {
+                                                                       var host = {};
+                                                                       var isMatchMediaSupported = !!(window && window.matchMedia) && !usePolyfill;
+                                                                       if (isMatchMediaSupported) {
+                                                                           var res = window.matchMedia(query);
+                                                                           callback.apply(host, [res.matches, res.media]);
+                                                                           res.addListener(function (changed) {
+                                                                               callback.apply(host, [changed.matches, changed.media]);
+                                                                           });
+                                                                       } else {
+                                                                           // ... polyfill
+                                                                       }
+                                                                   }
 
-            }else if($(object).attr("id")==="domestic-intern-tab"){
-                $("#international-intern-tab").removeClass('active');
-                $(object).addClass('active');
-                 $("#domestic-intern-container").show();
-                 $("#international-intern-container").hide();
-            }
-        }
+                                                                   function showHide(object) {
+                                                                       if ($(object).attr("id") === "international-intern-tab") {
+                                                                           $("#domestic-intern-tab").removeClass('active');
+                                                                           $(object).addClass('active');
+                                                                           $("#domestic-intern-container").hide();
+                                                                           $("#international-intern-container").show();
 
-    $(document).ready(function () {
-        $('.ui.accordion')
-            .accordion()
-            ;
+                                                                       } else if ($(object).attr("id") === "domestic-intern-tab") {
+                                                                           $("#international-intern-tab").removeClass('active');
+                                                                           $(object).addClass('active');
+                                                                           $("#domestic-intern-container").show();
+                                                                           $("#international-intern-container").hide();
+                                                                       }
+                                                                   }
 
-        $('.overlay')
-            .visibility({
-                type: 'fixed',
-                offset: 0 
-            })
-            ;
+                                                                   mq('only screen and (max-width: 767px)', function (match) {
+                                                                       if (match) {
+                                                                           $(".masthead__content__calltoaction").removeClass("massive");
+                                                                       }
+                                                                       if (!match) {
+                                                                           $(".masthead__content__calltoaction").addClass("massive");
+                                                                       }
+                                                                   });
 
-  $("#domestic-intern-container").hide();
-       
-      
-    });
+                                                                   $(document).ready(function () {
+                                                                       $('.ui.accordion')
+                                                                           .accordion()
+                                                                           ;
+
+                                                                       $('.overlay')
+                                                                           .visibility({
+                                                                               type: 'fixed',
+                                                                               offset: 0
+                                                                           })
+                                                                           ;
+
+                                                                       $("#domestic-intern-container").hide();
+
+
+                                                                   });
 
 </script>
 

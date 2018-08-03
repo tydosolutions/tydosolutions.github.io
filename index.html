@@ -444,6 +444,14 @@
 <script src="./js/semantic.min.js"></script>
 <script src="./js/jquery.waypoints.min.js"></script>
 <script>
+     window.onorientationchange = function() { 
+        var orientation = window.orientation; 
+            switch(orientation) { 
+                case 0:
+                case 90:
+                case -90: window.location.reload(); 
+                break; } 
+    };
                                                                    var mq = function (query, callback, usePolyfill) {
                                                                        var host = {};
                                                                        var isMatchMediaSupported = !!(window && window.matchMedia) && !usePolyfill;

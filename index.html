@@ -81,7 +81,7 @@
         </div>
 
         <div class="ui basic segment  content__body__container">
-            <div class="ui pointed blue flow two item pointing secondary  massive labeled icon menu">
+            <div id="offerings-tab-container" class="ui pointed blue flow two item pointing secondary  massive labeled icon menu">
                 <a class="active item"><i class="graduation cap icon "></i>Internship</a>
                 <a class=" item"><i class="users icon "></i>Training</a>
             </div>
@@ -111,7 +111,7 @@
         </div>
 
         <div class="ui segment basic content__body__container">
-            <div class="ui pointed blue flow two item pointing secondary  massive labeled icon menu">
+            <div id="intern-tab-container" class="ui pointed blue flow two item pointing secondary massive labeled icon menu">
                 <a id="international-intern-tab" class="active item" onClick="showHide(this);"><i class="graduation cap icon "></i>International-Internship</a>
                 <a id="domestic-intern-tab" class=" item" onClick="showHide(this);"><i class="users icon "></i>Domestic-Internship</a>
             </div>
@@ -285,9 +285,9 @@
 
 
             <div class="ui basic segment" id="domestic-intern-container">
-                <div class="ui stackable four column grid">
+                <div class="ui stackable three column grid">
                     <div class="column">
-                        <div class="ui card">
+                        <div class="ui card" style="margin:auto">
                             <div class="content">
                                 <div class="ui header large block blue">Student Profiling</div>
                             </div>
@@ -309,122 +309,56 @@
                                     <div class="completed step">
                                         <i class="truck icon"></i>
                                         <div class="content">
-                                            <div class="title">Country Counseling</div>
-                                        </div>
-                                    </div>
-                                    <div class="completed step">
-                                        <i class="truck icon"></i>
-                                        <div class="content">
                                             <div class="title">Internship Alignment</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="column">
+                        <div class="ui card" style="margin:auto">
+                            <div class="content">
+                                <div class="ui header large block blue">Document Rediness</div>
+                            </div>
+                            <div class="content">
+                                <a class="ui red ribbon label">Step 2</a>
+                                <div class="ui mini vertical fluid steps">
+                                    <div class="completed step">
+                                        <i class="truck icon"></i>
+                                        <div class="content">
+                                            <div class="title">Educational Document Check</div>
+                                        </div>
+                                    </div>
+                                    <div class="completed step">
+                                        <i class="truck icon"></i>
+                                        <div class="content">
+                                            <div class="title">Internship Confirmation</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    </div>
                     <div class="column">
-                        <div class="ui card">
+                        <div class="ui card" style="margin:auto">
                             <div class="content">
-                                <div class="ui header large block blue">Student Profiling</div>
+                                <div class="ui header large block blue">Internship Starts</div>
                             </div>
                             <div class="content">
-                                <a class="ui red ribbon label">Step 1</a>
+                                <a class="ui red ribbon label">Step 3</a>
                                 <div class="ui mini vertical fluid steps">
                                     <div class="completed step">
                                         <i class="truck icon"></i>
                                         <div class="content">
-                                            <div class="title">Resume Creation</div>
+                                            <div class="title">Students report <br> out at Destination</div>
                                         </div>
                                     </div>
                                     <div class="completed step">
                                         <i class="truck icon"></i>
                                         <div class="content">
-                                            <div class="title">Basic Orientation</div>
-                                        </div>
-                                    </div>
-                                    <div class="completed step">
-                                        <i class="truck icon"></i>
-                                        <div class="content">
-                                            <div class="title">Country Counseling</div>
-                                        </div>
-                                    </div>
-                                    <div class="completed step">
-                                        <i class="truck icon"></i>
-                                        <div class="content">
-                                            <div class="title">Internship Alignment</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="ui card">
-                            <div class="content">
-                                <div class="ui header large block blue">Student Profiling</div>
-                            </div>
-                            <div class="content">
-                                <a class="ui red ribbon label">Step 1</a>
-                                <div class="ui mini vertical fluid steps">
-                                    <div class="completed step">
-                                        <i class="truck icon"></i>
-                                        <div class="content">
-                                            <div class="title">Resume Creation</div>
-                                        </div>
-                                    </div>
-                                    <div class="completed step">
-                                        <i class="truck icon"></i>
-                                        <div class="content">
-                                            <div class="title">Basic Orientation</div>
-                                        </div>
-                                    </div>
-                                    <div class="completed step">
-                                        <i class="truck icon"></i>
-                                        <div class="content">
-                                            <div class="title">Country Counseling</div>
-                                        </div>
-                                    </div>
-                                    <div class="completed step">
-                                        <i class="truck icon"></i>
-                                        <div class="content">
-                                            <div class="title">Internship Alignment</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="ui card">
-                            <div class="content">
-                                <div class="ui header large block blue">Student Profiling</div>
-                            </div>
-                            <div class="content">
-                                <a class="ui red ribbon label">Step 1</a>
-                                <div class="ui mini vertical fluid steps">
-                                    <div class="completed step">
-                                        <i class="truck icon"></i>
-                                        <div class="content">
-                                            <div class="title">Resume Creation</div>
-                                        </div>
-                                    </div>
-                                    <div class="completed step">
-                                        <i class="truck icon"></i>
-                                        <div class="content">
-                                            <div class="title">Basic Orientation</div>
-                                        </div>
-                                    </div>
-                                    <div class="completed step">
-                                        <i class="truck icon"></i>
-                                        <div class="content">
-                                            <div class="title">Country Counseling</div>
-                                        </div>
-                                    </div>
-                                    <div class="completed step">
-                                        <i class="truck icon"></i>
-                                        <div class="content">
-                                            <div class="title">Internship Alignment</div>
+                                            <div class="title">Internship start Confirmation</div>
                                         </div>
                                     </div>
                                 </div>
@@ -542,9 +476,13 @@
                                                                    mq('only screen and (max-width: 767px)', function (match) {
                                                                        if (match) {
                                                                            $(".masthead__content__calltoaction").removeClass("massive");
+                                                                           $("#intern-tab-container").removeClass("massive");
+                                                                           $("#offerings-tab-container").removeClass("massive");
                                                                        }
                                                                        if (!match) {
                                                                            $(".masthead__content__calltoaction").addClass("massive");
+                                                                           $("#intern-tab-container").addClass("massive");
+                                                                           $("#offerings-tab-container").addClass("massive");
                                                                        }
                                                                    });
 
